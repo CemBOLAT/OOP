@@ -1,0 +1,35 @@
+Early Binding(Static Binding) :
+In early binding, the compiler determines at compile time which function or method to call based on the declared type of the object.
+	This decision is made statically.
+
+class Base {
+public:
+    void display() {
+        cout << "Base class display." << endl;
+    }
+};
+
+int main() {
+    Base obj;
+    obj.display();  // Early binding
+    return 0;
+}
+
+
+Late Binding (Dynamic Binding):
+In late binding, the determination of which method to call is deferred until runtime.
+	This is achieved through the use of virtual functions and pointers/references to base classes.
+
+class Base {
+public:
+    virtual void display() {
+        cout << "Base class display." << endl;
+    }
+};
+
+int main() {
+    Base obj;
+    Base* ptr = &obj;
+    ptr->display();  // Late binding
+    return 0;
+}

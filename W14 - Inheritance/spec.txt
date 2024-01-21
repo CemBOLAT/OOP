@@ -1,0 +1,23 @@
+Access Specifier
+in Base Class
+Type of Inheritance (Specifier After Class
+Name in Derived Class Definition)
+public protected private
+public Public Protected Private
+(Can only be used by name
+in definitions of member
+functions and friends)
+protected Protected Protected Private
+(Can only be used by name
+in definitions of member
+functions and friends)
+private Cannot be
+accessed by
+name in the
+derived class
+Cannot be
+accessed by
+name in the
+derived class
+Cannot be accessed by
+name in the derived clas

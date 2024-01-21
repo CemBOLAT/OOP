@@ -1,0 +1,22 @@
+
+
+The concepts of shallow copy and deep copy are crucial in object-oriented programming,
+	especially when dealing with classes that contain dynamic memory or pointers. Let's break down these concepts:
+
+
+Shallow Copy:
+Definition: Shallow copy involves copying the contents of the member variables directly from one object to another.
+Default Behavior: The default assignment operator and default copy constructor perform shallow copies.
+Scenario: Shallow copy works well when there are no pointers or dynamically allocated data involved in the class.
+	It essentially creates a new object with the same values as the original, but it does not duplicate the dynamically allocated memory or pointed structures.
+Example: If a class has a pointer, a shallow copy would copy the memory address stored in the pointer, not the actual data it points to.
+
+
+Deep Copy:
+Definition: Deep copy involves creating a new copy of what each member variable is pointing to or containing.
+	It aims to create a separate and identical copy of the dynamically allocated data or pointed structures.
+Requirement: When dealing with dynamic memory, pointers, or structures that can change during the object's lifecycle, a deep copy is often necessary to avoid unintended side effects.
+Example: If a class has a dynamic array or another dynamically allocated structure, a deep copy would allocate new memory and copy the contents of the original data into the new memory.
+
+In C++, when overloading the assignment operator or defining a copy constructor, you typically want to perform a deep copy if your class involves dynamically allocated memory.
+	This ensures that each object has its own independent copy of the data rather than sharing the same memory.

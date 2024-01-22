@@ -64,7 +64,7 @@ class SubClass2 extends Superclass {
 	}
 }
 
-public class downCast {
+public class upCast {
 	public static void main(String[] args){
 		Superclass[] arr = new Superclass[5];
 

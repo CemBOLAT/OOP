@@ -19,7 +19,7 @@ class Person implements Comparable<Person> {
     @Override
     public int compareTo(Person otherPerson) {
         // Compare based on age
-        return Integer.compare(this.age, otherPerson.age);
+        return String.compare(this.name, otherPerson.name);
 
         // If you want to compare based on name instead, you can use:
         // return this.name.compareTo(otherPerson.name);
